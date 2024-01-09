@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #1F2937;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-smooth: always;    
+}
+
+a {
+    text-decoration: none;
+    color: #d6d4d4;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #232e3e;
+    
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;   
+}
+
+.links {
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    font-size: larger;
+    font-weight: 700;
+    color: #eeeeee;
+}
+
+.logo {
+    background-color: #F9FAF8;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.search-bar {
+    background-color: #1F2937;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #d6d4d4;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-bar:focus {
+    border-color: #1F2937;
+}
+
+.headcon {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-logo {
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgb(31, 47, 108), rgba(17, 80, 208, 0));
+    transition: transform .2s;  
+}
+
+.main-logo:hover {
+    transform: scale(1.1);
+}
+
+.head-title {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #7cc2eb;
+    margin-top: -80px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff45;
+}
+
+.learnmore {
+    background-color: #7cc2eb;
+    border: none;
+    color: #232e3e;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;   
+    font-size: large;
+}
+
+
+.our-services {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.floating { 
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); } 
+}
+
